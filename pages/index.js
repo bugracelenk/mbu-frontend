@@ -169,9 +169,10 @@ export default function Home() {
                 </tr>
               </thead>
               <tbody>
-                {result.map((report) => {
+                {result.map((report, index) => {
                   return (
                     <tr
+                      key={index}
                       className={
                         report.waitingTime < 0 || report.waitingTime === "NaN"
                           ? "table-danger"
