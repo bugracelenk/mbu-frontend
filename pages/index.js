@@ -8,7 +8,7 @@ const calculateWQ = async ({
   avgServiceTime,
 }) => {
   const request = await fetch(
-    `http://localhost:3003/calculatewq?lambda=${lambda}&mue=${
+    `https://mbu-backend.azurewebsites.net/calculatewq?lambda=${lambda}&mue=${
       60 / parseInt(avgServiceTime)
     }&maxMachineCount=${maxMachineCount}`
   );
