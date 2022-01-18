@@ -161,7 +161,7 @@ export default function Home() {
         </div>
         {result !== null ? (
           <div className="col-md-6">
-            <table class="table">
+            <table className="table">
               <thead>
                 <tr>
                   <th scope="col">Makine Sayısı</th>
@@ -192,13 +192,12 @@ export default function Home() {
               </tbody>
             </table>
             <div className="card">
-              {console.log(bestOption)}
               <div className="card-body">
                 <h5 className="card-title">En İyi Seçenek</h5>
-                <p class="card-text">
+                <p className="card-text">
                   Makine Sayısı: {bestOption ? bestOption.machineCount : 0}{" "}
                 </p>
-                <p class="card-text">
+                <p className="card-text">
                   Bekleme Süresi: {bestOption ? bestOption.waitingTime : 0}
                 </p>
               </div>
